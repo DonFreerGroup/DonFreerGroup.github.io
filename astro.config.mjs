@@ -4,9 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    // Enable React for the Algolia search component.
-    react(), tailwind()],
+  integrations: [tailwind()],
     site: `http://www.kognitivemindshift.com`,
     output: 'static',
     outDir: './docs',
