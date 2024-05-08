@@ -25,7 +25,7 @@ import ByNumber from "./ByNumber.astro";
             </Paragraph>
             <div class="mt-10  w-full flex max-w-md mx-auto lg:mx-0">
                 <div class="flex sm:flex-row flex-col gap-5 w-full">
-                    <form action="#" method="POST" name="form_241258912525053" id="241258912525053"
+                    <form action= "https://api.web3forms.com/submit" method="POST"  <input type="hidden" name="656a93be-14ee-40f5-829d-ade3cc9a80fd" value="656a93be-14ee-40f5-829d-ade3cc9a80fd">
                      class="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-heading-3 shadow-lg shadow-box-shadow
                       border border-box-border bg-box-bg rounded-full ease-linear focus-within:bg-body  focus-within:border-primary">
                         <span class="min-w-max pr-2 border-r border-box-border">
@@ -33,7 +33,8 @@ import ByNumber from "./ByNumber.astro";
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
                             </svg>                                                                  
                         </span>
-                        <input type="email" name="simple_spc" id="simple_spc" placeholder="johndoe@gmail.com" class="w-full py-3 outline-none bg-transparent">
+                        <input type="email" name="email" required id="email" placeholder="johndoe@gmail.com" class="w-full py-3 outline-none bg-transparent">
+                        <div class="h-captcha" data-captcha="true"></div>
                         <Button variant={"primary"} className={"min-w-max text-white"}>
                             <span class="hidden sm:flex relative z-[5]">
                                 Get Started
@@ -45,6 +46,7 @@ import ByNumber from "./ByNumber.astro";
                             </span>
                         </Button>
                     </form>
+                    <script src="https://web3forms.com/client/script.js" async defer></script>
                 </div>
             </div>
         </div>
