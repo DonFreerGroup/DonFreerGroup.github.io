@@ -6,5 +6,9 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
     site: `https://www.kognitivemindshift.com`,
+    output: 'static',
+    outDir: './docs',
+    build: {
+      assets: 'astro'
     }
 });
