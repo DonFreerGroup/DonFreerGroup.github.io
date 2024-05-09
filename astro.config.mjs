@@ -7,7 +7,7 @@ export default defineConfig({
   integrations: [tailwind()],
     site: `https://www.kognitivemindshift.com`,
     output: 'static',
-    outDir: './docs',
+    outDir: './root',
     build: {
       assets: 'astro'
     }
